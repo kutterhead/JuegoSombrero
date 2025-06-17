@@ -26,6 +26,9 @@ public class gameController : MonoBehaviour
         Vector3 newPos = Vector3.Lerp(limiteI.position,limiteD.position,Random.Range(0f,1f));
         positionGorro.position = newPos;
         Instantiate(prefabGorro, positionGorro.position, positionGorro.rotation);
+
+
+
         Invoke(nameof(lanzaGorro),1f);
     }
 }
